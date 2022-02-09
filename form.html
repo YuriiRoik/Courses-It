@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<body lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+        <style>
+
+                body { 
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                
+                table, th, td {
+                    border: 5px solid #a05735;
+                    padding: 5px;
+                    border-collapse: collapse;
+                    width: 500px;
+                    height: 30px;
+                 }
+                
+                  
+                input {
+                    padding: 2px;
+                }
+        </style>
+
+        <form action="/" method="get">
+            <table>
+
+
+                <tr>
+                    <th colspan="2">Pizza Shop 2.0</th>
+                <tr>
+                    <td style="padding-left: 5px">Name</td>
+                    <td><input type="text" name="name"></td>
+                       
+
+                </tr>
+
+                <tr>
+                    <td>Pizza Topping</td>
+                <td>
+                    <input type="radio" id="choose">
+                    <label for="choose">Supreme</label>
+
+                    <br>
+
+                    <input type="radio" id="choose2">
+                    <label for="choose2">Vegetarian</label>
+
+                    <br>
+
+                    <input type="radio" id="choose3">
+                    <label for="choose3">Hawaiian</label>
+                </td>
+                </tr>
+
+                <tr>
+                    <td>Pizza Sause</td>
+                    <td>
+                        <select name="souse">
+                            <option value="tomato">Tomato</option>
+                            <option value="tomato">Creamy</option>
+                            <option value="tomato">Garlicy</option>
+                        </select>   
+                    </td>
+                </tr>
+                 
+                       
+                <tr>
+                    <td>Optinal Extras</td>
+                    <td>
+                        <input type="checkbox" id="optinal-extras">
+                        <label for="optinal-extras">Extra Cheese</label>
+
+                        <input type="checkbox" id="optinal-extras2">
+                        <label for="optinal-extras2">Extra Cheese</label>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td colspan="2">
+                        <label for="tex">Delivery Instruction:</label>
+                        <br>
+                        <textarea name="text" rows="8" cols="60"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+
+                        <button type="submit">Send me Order</button>
+                    </td>
+                </tr>
+
+
+            </table>
+    </form>
+</body>
+</html>
